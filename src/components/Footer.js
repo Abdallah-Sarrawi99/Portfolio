@@ -1,10 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -13,10 +9,10 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
+        <Col md="4" className="footer-copyright">
           <h3>abdallah.sarrawi99@gmail.com</h3>
         </Col>
-        <Col md="4" className="footer-copywright">
+        <Col md="4" className="footer-copyright">
           <h3>Copyright © {year} AS</h3>
         </Col>
         <Col md="4" className="footer-body">
@@ -26,7 +22,6 @@ function Footer() {
                 href="https://github.com/Abdallah-Sarrawi99"
                 style={{ color: "white" }}
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <AiFillGithub />
               </a>
@@ -37,7 +32,6 @@ function Footer() {
                 href="https://www.linkedin.com/in/abdallah-sarrawi/"
                 style={{ color: "white" }}
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
               </a>
