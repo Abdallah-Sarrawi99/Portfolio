@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
-import Github from "./Github";
+
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
@@ -10,7 +11,6 @@ import Toolstack from "./Toolstack";
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -22,7 +22,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              My <strong className="purple">Journey </strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -35,7 +35,7 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          <strong className="purple">Tech</strong> stack
         </h1>
 
         <Techstack />
@@ -44,8 +44,41 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
+        <Row>
+          <Col md={12} className="home-about-social">
+            <h1>
+              <span className="purple">Contact</span> Information
+            </h1>
+            <p>Gmail : abdallah.sarrawi99@gmail.com</p>
+            <p>WhatsApp : +972597626931</p>
 
-        <Github />
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/abdallah-sarrawi/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://github.com/Abdallah-Sarrawi99"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+            </ul>
+            <p>
+              Feel free to <span className="purple">connect </span>with me
+            </p>
+          </Col>
+        </Row>
       </Container>
     </Container>
   );

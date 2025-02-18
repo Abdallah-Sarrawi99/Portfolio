@@ -1,18 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+import hiringTAP from "../../Assets/Projects/hiringwithTAP.png";
+import learningResources from "../../Assets/Projects/learningResources.png";
+
+import webTopics from "../../Assets/Projects/webTopicsproject.png";
+
+import dicegame from "../../Assets/Projects/dicegame.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -23,68 +22,43 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={hiringTAP}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Pages Developed During My TAP Internship"
+              description="During my internship at TAP Company, I worked on several web pages, contributing to real-world projects. I was responsible for building user-friendly interfaces, implementing interactive features, and ensuring smooth functionality, and here's one of these pages"
+              demoLink="https://www.tapcareers.io/for-employers/hiring-with-tap"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={learningResources}
+              isBlog={false}
+              title="Pages Developed During My TAP Internship"
+              description="During my internship at TAP Company, I worked on several web pages, contributing to real-world projects. I was responsible for building user-friendly interfaces, implementing interactive features, and ensuring smooth functionality, and here's one of these pages"
+              demoLink="https://www.tapcareers.io/resources-and-events/free-learning-resources"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={webTopics}
               isBlog={false}
               title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              description="Web Topics is a website built during my time at the TAP course, using Vanilla JavaScript, HTML, and CSS. It showcases various web development technologies and frameworks, allowing users to filter by search, author, and technology type for easy exploration. after that we implemented the project using React.js"
+              ghLink="https://github.com/JSD-0423/Abdallah-Sarrawi"
+              demoLink="https://jsd-0423.github.io/Abdallah-Sarrawi/"
             />
           </Col>
-
+        </Row>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={dicegame}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Dice-Game"
+              description="This is a simple two-player dice game built with Vanilla JavaScript, HTML, and CSS. Players take turns rolling a dice, with the option to hold their score to end their turn or roll again for a higher total. However, if a player rolls a 0, their turn immediately ends, and the other player takes over. The game continues until one player reaches 100 points or more, declaring them the winner."
+              ghLink="https://github.com/Abdallah-Sarrawi99/Dice-Game"
+              demoLink="https://dicegame99.netlify.app/"
             />
           </Col>
         </Row>
