@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
+import Techstack from "./Techstack.js";
+import AboutCard from "./AboutCard.js";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
@@ -24,7 +24,7 @@ function About() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               My <strong className="purple">Journey </strong>
             </h1>
-            <Aboutcard />
+            <AboutCard />
           </Col>
           <Col
             md={5}
